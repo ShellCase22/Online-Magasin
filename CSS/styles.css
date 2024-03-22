@@ -1,0 +1,157 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.topBar {
+    margin: 0;
+    padding: 0 0; 
+    background-color: rgb(39, 35, 35);
+    
+}
+
+.barList {
+    display: flex;
+    list-style-type: none;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#search {
+    padding: 7px;
+}
+
+.barList li {
+    margin-right: 40px;
+    position: relative;
+    padding: 15px 0;
+}
+
+.barList li a {
+    display: block;
+    color: #8f5f42;
+    border: 3px solid #b26844;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.barList li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+    border: none;
+}
+
+.barList img {
+    padding: 0;
+    height: 100%;
+    max-height: 55px;
+}
+
+.barList:first-child li:first-child {
+    padding-top: 2px;
+    padding-bottom: 2px; 
+}
+
+.barList li{
+    padding: 0px 0;
+}
+
+#banner {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    background-color: rgb(80, 72, 72);
+}
+
+#hBanner {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.side-image {
+    max-width: 9.5%;
+    position: absolute;
+    top: auto;
+    width: 100%;
+    height: auto;
+    border: 4px solid #8f5f42;
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+}
+
+#Content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#contentBox p {
+    margin: 15px 15px;
+}
+
+
+#contentBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: fit-content;
+    margin: 0 auto;
+    max-width: 80%;
+    border: 2px solid #000;
+}
+
+#bottomBar {
+    margin-top: auto;
+    left: 0;
+    width: 100%;
+    background-color: rgb(39, 35, 35);
+    color: #8f5f42;
+    z-index: 999;
+}
+
+#bottomBar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#bottomBar li {
+    padding: 0 10px;
+}
+
+#bottomBar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .side-image {
+        display: none;
+    }
+
+    #hBanner {
+        display: none;
+    }
+    
+    #contentBox {
+        margin: 0;
+        max-width: 100%;
+    }
+}
